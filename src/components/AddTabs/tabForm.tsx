@@ -22,7 +22,7 @@ const TabForm = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className="min-w-[20rem] flex flex-col  gap-1"
+      className="w-full sm:min-w-[20rem] flex flex-col  gap-1"
     >
       <div className="flex items-start mb-4 gap-2 flex-col">
         <label htmlFor="icon-select" className="text-xl font-medium">

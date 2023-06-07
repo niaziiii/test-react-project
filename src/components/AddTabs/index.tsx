@@ -37,7 +37,7 @@ const AddTabs = ({ changePages, tabs, setTabs }: AddTabInterface) => {
   return (
     <>
       <Badge description={`Total Tabs : ${tabs.length}`} top={5} />
-      <div className="p-8 bg-secondary text-white rounded-xl shadow-2xl overflow-hidden">
+      <div className="w-[95%] sm:w-auto p-8 bg-secondary text-white rounded-xl shadow-2xl overflow-hidden">
         <h1 className="text-3xl font-bold mb-6 text-center">Add Tab </h1>
         <CustomBtn top={5} title="Visit tabs" open={changePages} />
         <TabForm

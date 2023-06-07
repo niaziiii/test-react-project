@@ -31,18 +31,18 @@ const index = ({ tabs, setTabs, changePages }: AddTabInterface) => {
 
   return (
     <>
-      <CustomBtn open={changePages} title="Add more tabs" top={5} />
-      <div className="p-4 bg-secondary text-black rounded-lg px-8 mt-14 relative">
+      <CustomBtn open={changePages} title="Add more tabs" top={3} />
+      <div className="p-4 mb-12 sm:mb-0 bg-secondary text-black rounded-lg px-8 mt-20 sm:mt-14 relative w-[95%] sm:w-auto">
         <h2 className="text-3xl font-medium text-center mt-3 mb-3 text-white">
           Tabs
         </h2>
         <FilterData tabs={tabs} setTabs={setTabs} />
 
-        <div className="grid grid-cols-3 gap-3 transition-all">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 transition-all">
           {tabs.map((tab, index) => (
             <div
               key={index}
-              className="cursor-move border border-gray-300 rounded bg-white relative px-4 py-3 transition-all"
+              className="cursor-move flex items-center border border-gray-300 rounded bg-white p-2 transition-all"
               draggable
               onDragStart={(e) => handleDragStart(e, index)}
               onDragOver={handleDragOver}
@@ -54,7 +54,7 @@ const index = ({ tabs, setTabs, changePages }: AddTabInterface) => {
                 key={index}
               />
               <button
-                className="text-sm font-bold absolute top-1 right-1 hover:text-btn/5 text-btn"
+                className="text-sm font-bold ml-auto  hover:text-btn/5 text-btn"
                 onClick={() => handleTabClose(index)}
               >
                 <GrClose />

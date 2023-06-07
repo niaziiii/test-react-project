@@ -16,7 +16,7 @@ const Tab: React.FC<TabProps> = ({ icon, description }) => {
 
   return (
     <animated.div style={scaleProps}>
-      <div className="flex items-center gap-3 mt-2 w-full justify-start">
+      <div className="flex items-center gap-3 w-full justify-start">
         <b className="text-2xl">{AppIcons[icon]}</b>
         <span>{description}</span>
       </div>

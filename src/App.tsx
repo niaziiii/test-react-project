@@ -11,7 +11,7 @@ const App: React.FC = () => {
   const changePages = () => setwhichPageToShow(!whichPageToShow);
 
   return (
-    <div className="p-4 flex items-center justify-center bg-main min-h-screen relative">
+    <div className="sm:p-4 flex items-center justify-center bg-main min-h-screen relative">
       {whichPageToShow ? (
         <AddTabs tabs={tabs} setTabs={setTabs} changePages={changePages} />
       ) : (

@@ -11,7 +11,7 @@ const index = ({ open, title, top }: ButtonType) => {
     <div
       style={{ top: `${top}%` }}
       className={`w-auto flex items-center gap-2 
-      absolute left-8 whitespace-nowrap text-lg font-medium mr-2 dark:bg-gray-700 overflow-hidden`}
+      absolute left-2 sm:left-8 whitespace-nowrap text-sm sm:text-lg font-medium mr-2 dark:bg-gray-700 overflow-hidden`}
     >
       <button
         onClick={open}
